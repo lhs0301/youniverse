@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#b1a0c4">
+  <meta name="description" content="나만의 픽셀 행성을 만들고 우주를 꾸미는 게임, Youniverse.">
+  <title>Youniverse</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./style.css?v=13f55b143e61">
+  <script defer src="./vendor/p5.min.js"></script>
+  <script defer src="./src/app.bundle.js?v=63d279568d93"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="./" aria-label="Youniverse home">YOUNIVERSE</a>
+    <nav aria-label="Main navigation">
+      <button class="nav-link" data-action="home">Create Your Planet</button>
+      <button class="nav-link" data-action="universe">MY UNIVERSE <span class="count" id="nav-count">0</span></button>
+      <button class="nav-link" data-action="help">HOW TO PLAY</button>
+    </nav>
+  </header>
+  <main>
+    <div class="game-wrap" id="game-wrap">
+      <section class="game-window" aria-label="Youniverse pixel planet game">
+        <div class="window-bar"><div class="window-title"><span class="window-star">✦</span> YOUNIVERSE</div></div>
+        <div id="app" class="app"></div>
+      </section>
+    </div>
+  </main>
+  <div id="modal-root"></div>
+  <div id="popover-root"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript>Youniverse를 실행하려면 브라우저의 JavaScript를 활성화해 주세요.</noscript>
+</body>
+</html>
